@@ -20,6 +20,7 @@
     docker stats
     cat /var/lib/docker/containers/<container id>/<container id>-json.log
     docker system prune -a 
+    sudo docker top <conteiner-id>
 
 ### LSOF
     sudo lsof -p <pid> -i
