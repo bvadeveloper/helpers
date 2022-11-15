@@ -1,18 +1,18 @@
 # linux
 
-    whoami - me
+    whoami
 
     pwd - current root directory
     ls -la - show all files and dirs
     locate bash - show all bash places
 
     passwd - change password
-    sudo su - sudo access
+    sudo su
     su john - switch to user John 
 
-    man ls - show help by command
+    man ls
 
-    chmod +x or chmod 777 file.txt - allow execution
+    chmod +x or chmod 777 file.txt
 
     ifconfig - network settings
     iwconfig - is similar to ifconfig, but is dedicated to wireless networking interfaces
