@@ -21,7 +21,14 @@
     cat /var/lib/docker/containers/<container id>/<container id>-json.log
     docker system prune -a 
     sudo docker top <conteiner-id>
+    
+    docker tag "consul:1.12.4" "nexus.local:8080/nexus/repository/eng-docker/local-consul:1.12.4"
+    docker login nexus.local:8080 -u "docker" -p "fake-password"
+    docker push "nexus.local:8080/nexus/repository/eng-docker/local-consul:1.12.4"
+    docker logout nexus.local:8080
+    
     docker-compose -f <docker-file-path> up buid
+    docker-compose logs -f kafka
 
 ### LSOF
     sudo lsof -p <pid> -i
@@ -68,4 +75,7 @@
     vault login -method=ldap username=realusername
     vault read disco/staging/path
   
+### AWS EMR Srapk
+    ssh -i "aws-spark.ppk" hadoop@127.0.0.1
+    sudo vim /etc/spark/conf/spark-defaults.conf
 
