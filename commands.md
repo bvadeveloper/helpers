@@ -21,6 +21,7 @@
     cat /var/lib/docker/containers/<container id>/<container id>-json.log
     docker system prune -a 
     sudo docker top <conteiner-id>
+    docker-compose -f <docker-file-path> up buid
 
 ### LSOF
     sudo lsof -p <pid> -i
