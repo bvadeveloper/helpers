@@ -34,7 +34,7 @@
     sudo lsof -p <pid> -i
     sudo lsof  -p "$pid" | grep -e '(ESTABLISHED)$' -e '->INO=.*
     sudo lsof -p <pid> | wc - l
-    sudo docker ps | grep ecs-listqueryagent-prod- | awk '{print $1}' | ((xargs -L1 sudo docker top) | awk '{ print $2 }' | grep -P '\d+') | xargs -L1 -I {} sh -c 'ps -f {}; sudo lsof -p {} | wc -l'
+    sudo docker ps | grep <service-name> | awk '{print $1}' | ((xargs -L1 sudo docker top) | awk '{ print $2 }' | grep -P '\d+') | xargs -L1 -I {} sh -c 'ps -f {}; sudo lsof -p {} | wc -l'
 
 ### MySql
     docker rm -f mysql
