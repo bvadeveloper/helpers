@@ -79,3 +79,9 @@
     ssh -i "aws-spark.ppk" hadoop@127.0.0.1
     sudo vim /etc/spark/conf/spark-defaults.conf
 
+### Add Git keys 
+    ssh-keygen -t ed25519 -C "email@domain.com" 
+    ssh-add ~/.ssh/id_ed25519 
+    cat ~/.ssh/id_ed25519.pub 
+    add key to UI
+
