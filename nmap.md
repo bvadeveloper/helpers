@@ -11,3 +11,7 @@
 
     https://ouilookup.com/search/14:EB:B6:EE:DF:DC
     https://macaddress.io/mac-address-lookup/8L2o4wDK5E
+
+### Default passwords for network devices 
+    https://www.fortypoundhead.com/tools_dpw.asp
+    https://www.routerpasswords.com/
