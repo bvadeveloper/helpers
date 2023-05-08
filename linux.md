@@ -1,7 +1,7 @@
 # linux
 
     whoami
-
+    uname -a - linux version 
     pwd - current root directory
     ls -la - show all files and dirs
     locate bash - show all bash places
